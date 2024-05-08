@@ -1,23 +1,23 @@
 let pianoKeysAction = [];
 
 const pianoKeys=[
-    {className:"key",className2:"white",name:"a"},
-    {className:"key",className2:"black",name:"w"}, 
-    {className:"key",className2:"white",name:"s"}, 
-    {className:"key",className2:"black",name:"e"}, 
-    {className:"key",className2:"white",name:"d"}, 
-    {className:"key",className2:"white",name:"f"}, 
-    {className:"key",className2:"black",name:"t"}, 
-    {className:"key",className2:"white",name:"g"}, 
-    {className:"key",className2:"black",name:"y"}, 
-    {className:"key",className2:"white",name:"h"}, 
-    {className:"key",className2:"black",name:"u"}, 
-    {className:"key",className2:"white",name:"j"}, 
-    {className:"key",className2:"white",name:"k"}, 
-    {className:"key",className2:"black",name:"o"}, 
-    {className:"key",className2:"white",name:"l"}, 
-    {className:"key",className2:"black",name:"p"}, 
-    {className:"key",className2:"white",name:";"}, 
+    {className:"white",name:"a"},
+    {className:"black",name:"w"}, 
+    {className:"white",name:"s"}, 
+    {className:"black",name:"e"}, 
+    {className:"white",name:"d"}, 
+    {className:"white",name:"f"}, 
+    {className:"black",name:"t"}, 
+    {className:"white",name:"g"}, 
+    {className:"black",name:"y"}, 
+    {className:"white",name:"h"}, 
+    {className:"black",name:"u"}, 
+    {className:"white",name:"j"}, 
+    {className:"white",name:"k"}, 
+    {className:"black",name:"o"}, 
+    {className:"white",name:"l"}, 
+    {className:"black",name:"p"}, 
+    {className:"white",name:";"}, 
 ];
 
 const showKeys = ()=> {
@@ -26,7 +26,7 @@ const showKeys = ()=> {
 
     pianoKeys.forEach(key => {
         const li = document.createElement('li');
-        li.classList.add(key.className, key.className2);
+        li.classList.add('key', key.className);
         li.dataset.key = key.name;
         li.innerHTML = `<span>${key.name}</span>`;
         ul.appendChild(li);
